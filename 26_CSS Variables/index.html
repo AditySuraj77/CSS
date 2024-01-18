@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Variables</title>
+     <style>
+
+          :root{
+               --fcolor:rgb(255, 251, 41);
+               --scolor:rgb(243, 253, 102);
+               --textcolor:rgb(54, 53, 53);
+               --padd: 10px;
+               --navfont: Verdana, Geneva, Tahoma, sans-serif;
+               /* --border: 1.6px solid gray; */
+               --textfont:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+          }
+          *{
+               padding: 0;
+               margin: 0;
+          }
+
+          .nav{
+               /* background-color: aquamarine; */
+               background-color: var(--fcolor);
+               border: var(--border);
+               
+          }
+
+          ul{
+               display: flex;
+               
+
+          }
+          ul li{
+               list-style: none;
+               padding: 25px;
+               font-family: var(--navfont);
+               font-size: larger;
+          }
+          .item{
+               /* background-color: rgb(0, 117, 78); */
+               background-color: var(--scolor);
+               /* color: antiquewhite; */
+               color: var(--textcolor);
+               padding: var(--padd);
+               border: var(--border);
+               font-family: var(--textfont);
+               
+          }
+     </style>
+</head>
+<body>
+     <div class="nav">
+          <ul>
+               <li>Home</li>
+               <li>About Us</li>
+               <li>Services</li>
+          </ul>
+     </div>
+
+     <div class="item">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, culpa enim. Laboriosam, nesciunt perspiciatis cupiditate delectus consequatur debitis? Officiis, blanditiis vero! Assumenda veritatis illo numquam saepe nesciunt praesentium doloribus sunt cum reiciendis? Expedita laudantium porro quo autem, vel doloribus fuga animi ipsum tempore et eveniet officia omnis, optio maxime labore dolores voluptatum vitae sunt explicabo reiciendis corporis consequatur commodi. Quia est autem quos dolorem voluptas voluptatibus molestiae optio incidunt odio nostrum doloribus earum placeat, laborum nesciunt dolor sint deleniti rem nulla dolorum, a animi fuga reiciendis unde! Molestiae placeat, voluptate repellat voluptatem minus accusamus maxime doloribus harum non, dolores dicta.
+     </div>
+</body>
+</html>

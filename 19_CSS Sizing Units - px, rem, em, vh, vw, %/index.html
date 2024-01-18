@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Sizing Units - px, rem, em, vh, vw, % </title>
+     <style>
+          *{
+               padding: 0;
+               margin: 0;
+          }
+          .container{
+               background-color: aquamarine;
+               /* width: 1366px; */
+               box-sizing: border-box;
+               border: 2px solid black;
+               width: 80vw;
+               height: 10vh;
+               margin: auto;
+          }
+
+          /* html{
+               font-size: 10px;
+          } */
+          .box{
+               background-color: aquamarine;
+               /* width: 1366px; */
+               box-sizing: border-box;
+               border: 2px solid rgb(0, 0, 0);
+               width: 80vw;
+               height: 70vh;
+               /* font-size: 1em;  */
+               /* em unit means your actual default font value is 16 and then you add 2 em then 16 multiply by em value and final calculations is defult * em = fontsize */
+               margin: 23px auto;
+               /* font-size: 3rem; */
+               /* rem unit means root font value * by rem value by
+               default root font value is 16 but you want to change it then multiply by rem and find actual font value */
+               /* min-height: 80vh; */
+               /* min-width: 90vw; */
+          }
+          .foot{
+               border: 2px solid black;
+               box-sizing: border-box;
+               margin: 23px auto;
+               width: 80vw;
+          }
+          .box div{
+               border: 2px red solid;
+               width: 50%;
+          }
+          .box div p{
+               border: 2px darkblue solid;
+               width: 50%;
+          }
+     </style>
+</head>
+<body>
+     <div class="container">CSS Sizing Units - px, rem, em, vh, vw, % lorem500</div>
+     <div class="box">CSS Sizing Units - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla necessitatibus deserunt quos? Magnam maxime cumque necessitatibus at dolorem consectetur mollitia vero eveniet et sit ipsum ea, doloremque, excepturi natus dolores, voluptatum minima magni dolore libero asperiores assumenda delectus ducimus. Odit veniam vel deserunt. Ex, sequi non magni necessitatibus assumenda voluptatem lorem5000
+          <div>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, impedit molestias minus suscipit aut ratione, corporis ullam sequi dolorem neque eum iure, modi officiis? Alias, placeat! Rem dolorem sit magnam earum tempore velit, delectus et ad ullam reprehenderit, odio rerum facilis nobis fugiat ipsa impedit assumenda similique perferendis eos eius Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, quod praesentium? Ex modi magnam distinctio voluptas officia reprehenderit praesentium non ratione earum, beatae exercitationem quasi laboriosam optio porro obcaecati a aspernatur quod explicabo expedita blanditiis fugiat. Dolor nulla soluta mollitia qui distinctio eum velit autem quas dolore aliquam eligendi nostrum laborum id voluptas sint, recusandae, ad nemo minima, in deserunt magnam al
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente fuga possimus quisq</p>
+          </div>
+     </div>
+     <div class="foot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quam necessitatibus sequi sit modi, autem minus ullam, iusto perferendis corrupti ab tempore.</div>
+</body>
+</html>

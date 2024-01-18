@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Selectors MasterClass</title>
+     <style>
+          /* Element Selector */
+          div{
+               background-color: black;
+               color: aqua;
+          }
+          /* Class Selectors */
+          .container{
+               background-color: chartreuse;
+               color: black;
+          }
+          /* Id Selectors */
+          #one{
+               background-color: violet;
+               color: yellow;
+          }
+
+          /* Child Selector */
+          div > p{
+               background-color: black;
+               color: chartreuse;
+          }
+          /* Descendant Selector  */
+          div h2{
+               background-color: tomato;
+               color: rgb(2, 21, 192);
+          }
+          /* Universal Selector */
+          *{
+               padding: 0px;
+               margin: 0px;
+          }
+          /* Peseudo Selector */
+
+           a:visited{
+               color: aqua;
+          } 
+
+           a:link{
+               color: red;
+          } 
+           a:active{
+               background-color: aqua;
+          } 
+
+           a:hover{
+               background-color: black;
+          } 
+
+     </style>
+</head>
+<body>
+     <div>
+          Element Selectors
+     </div>
+<br>
+     <div>
+          Element Selectors
+     </div>
+
+     <br>
+     <div class="container">
+          
+          Class Selectors
+     </div>
+     <br>
+
+     <div id="one">
+          Id Selectors
+     </div>
+     <br>
+     <div>
+          <p>Child Selectors</p>
+     </div>
+     <br>
+     <div>
+          <h2> Descendant Selector </h2>
+     </div>
+     <br>
+     <a href="https://www.cricbuzz.com/">Cricbuzz</a>
+     <a href="https://www.canava.com/">Canava</a>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Exercise 5 - Design this Layout</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+          }
+
+          nav ul {
+               display: flex;
+               background-color: chocolate;
+
+
+          }
+
+
+          header {
+               position: sticky;
+               top: 0px;
+               z-index: 1;
+          }
+
+          nav ul li {
+               list-style: none;
+               padding: 50px;
+               color: rgb(255, 255, 255);
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               font-size: larger;
+               font-weight: bolder;
+               letter-spacing: 2px;
+          }
+
+          .boxes {
+               background-color: cornflowerblue;
+               height: 100vh;
+               width: 97vw;
+               margin: 10px;
+               display: flex;
+               justify-content: space-between;
+
+          }
+
+          .box1 {
+               height: 80vh;
+               background-color: violet;
+               width: 30vw;
+               position: relative;
+               top: 50px;
+               left: 60px;
+
+          }
+
+          .box2 {
+               height: 80vh;
+               background-color: turquoise;
+               width: 30vw;
+               position: relative;
+               left: -60px;
+               right: 50px;
+               top: 50px;
+          }
+
+          section {
+               height: 30vh;
+               background-color: blue;
+               width: 70vw;
+               border-radius: 50px;
+               position: relative;
+               left: 150px;
+               margin: 50px;
+
+
+          }
+
+          footer {
+               background-color: yellow;
+               height: 30vh;
+          }
+
+          svg {
+               position: fixed;
+               height: 50px;
+          }
+
+          .icon {
+               height: 60px;
+               width: 60px;
+               background-color: black;
+               border-radius: 50px;
+               position: fixed;
+               bottom: 5px;
+               right: 5px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <header>
+          <nav>
+               <ul>
+                    <li>Navbar</li>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Disabled</li>
+               </ul>
+          </nav>
+     </header>
+
+     <main>
+          <div class="boxes">
+               <div class="box1">
+
+               </div>
+               <div class="box2">
+
+               </div>
+
+          </div>
+
+          <div class="icon">
+
+          </div>
+     </main>
+
+     <section>
+
+     </section>
+
+     <footer>
+
+     </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

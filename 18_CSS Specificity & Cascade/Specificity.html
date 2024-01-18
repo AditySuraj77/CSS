@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Specificity & Cascade</title>
+     <style>
+          /* CSS Specificity & Cascade */
+          /* Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector */
+          /* Element Specificity 1 */
+          h1 {
+               color: blueviolet;
+          }
+
+          /* Class and attribute Specificity 10 */
+          .head {
+               color: yellow;
+          }
+
+          /* ID Specificity 100 */
+          #heading {
+               color: violet;
+          }
+
+          /* !importannt Specificity topUp */
+          .head {
+               color: burlywood !important;
+          }
+
+          /* Note : Inline Css Style Specificity is 1000 */
+
+          /* Quiz */
+          a.harryclass.rohan-class[href]:hover {
+               color: red;
+          }
+
+          /* Solutions */
+          /* 1 + 10 + 10 + 10 + 10 = 41*/
+     </style>
+</head>
+
+<body>
+     <h1 class="head" id="heading">CSS Specificity & Cascade</h1>
+
+     <!-- Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+1.Universal Selector: 0
+2.Element selectors and pseudo-elements: 1
+3.Class selectors, attribute selectors, and pseudo-classes: 10
+4.ID selectors: 100
+5.Inline styles: 1000 -->
+
+</body>
+
+</html>

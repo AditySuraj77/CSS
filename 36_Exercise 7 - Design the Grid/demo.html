@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .container{
+               display: grid;
+               width: 1300px;
+               border: 2px solid red;
+               grid-template-columns: 1fr 1fr 1fr;
+               row-gap: 20px;
+               justify-items: center;
+               align-items: center;
+               text-align: center;
+          }
+          .item-contain{
+               height: 25vh;
+               width: 25vw;
+               border: 2px black solid;
+          }
+          .content {
+               text-align: center;
+
+
+          }
+
+          .buttons {
+               display: flex;
+               justify-content: center;
+               justify-content: space-around;
+               margin-top: 30px;
+
+          }
+
+          .buttons .bt-1 button {
+               width: 130px;
+               height: 35px;
+               background-color: #00b6d1;
+               border-radius: 5px;
+               border-style: none;
+               color: #ffffff;
+               font-family: 'Segoe UI';
+               font-size: 13px;
+               font-weight: bold;
+
+          }
+
+          .buttons .bt-2 button{
+               width: 130px;
+               height: 35px;
+               background-color: #5cb85c;
+               border-radius: 5px;
+               border-style: none;
+               color: #ffffff;
+               font-family: 'Segoe UI';
+               font-size: 13px;
+               font-weight: bold;
+          }
+
+          .english h3{
+               font-family: 'Segoe UI';
+               font-size: 20px;
+               font-weight: 900;
+          }
+          .buttons .bt-1 a{
+               text-decoration: none;
+               color: #ffffff;
+          }
+          .buttons .bt-2 a{
+               text-decoration: none;
+               color: #ffffff;
+          }
+          .buttons .bt-1 button:hover{
+               background-color: #02ddff;
+          }
+          .buttons .bt-2 button:hover{
+               background-color: #7ffa7f;
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+          <div class="item-contain">
+               <div class="content">
+                    <div class="english">
+                         <h3><strong>English</strong></h3>
+                         <small>Modern English</small>
+                    </div>
+                    <div class="buttons">
+                         <div class="bt-1">
+                              <button><a href="ue_english_64.exe">Download 32bit</a></button>
+                         </div>
+                         <div class="bt-2">
+                              <button><a href="ue_english_64.exe">Download 64bit</a></button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="item-contain">2</div>
+          <div class="item-contain">3</div>
+          <div class="item-contain">4</div>
+          <div class="item-contain">5</div>
+          <div class="item-contain">6</div>
+          <div class="item-contain">7</div>
+          <div class="item-contain">8</div>
+          <div class="item-contain">9</div>
+          <div class="item-contain">9</div>
+     </div>
+</body>
+</html>

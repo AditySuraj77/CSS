@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Exercise 8 - Bounce Animation</title>
+     <style>
+          .container {
+               width: 97vw;
+               height: 98vh;
+               background-color: black;
+
+          }
+
+          .box {
+               background-color: aqua;
+               width: 130px;
+               height: 120px;
+               border-radius: 500px;
+               position: absolute;
+               top: 562px;
+               left: 9px;
+               animation: y_ani 1s ease-in infinite alternate,
+                          x_ani 3s linear infinite;
+          }
+
+          @keyframes x_ani {
+               from{
+                    left: 0;
+               }
+               to{
+                    left: 80%;
+               }
+               
+          }
+
+          @keyframes y_ani {
+               from{
+                    top: 0%;
+               }
+               to{
+                    top: 82%;
+               }
+               
+          }
+
+
+          
+
+         
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <div class="box">
+
+          </div>
+     </div>
+</body>
+
+</html>

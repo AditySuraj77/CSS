@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Transition Property</title>
+
+     <style>
+          .container {
+               background-color: tomato;
+               width: 98vw;
+               height: 98vh;
+          }
+
+          .box {
+               background-color: teal;
+               width: 12vw;
+               height: 98vh;
+               position: relative;
+               right: 169px;
+               margin: 5px;
+
+               transition: translate,background-color 0s, ease-in, 1s;
+
+          }
+          .box h1 strong{
+               color: antiquewhite;
+               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+
+          .translate:hover{
+               transform: translateX(160px) translateY(0px);
+               background-color:rgb(180, 54, 75);
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <div class="box translate">
+               <h1><strong>Transition</strong></h1>
+          </div>
+          
+     </div>
+</body>
+
+</html>

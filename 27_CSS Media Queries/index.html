@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>CSS Media Queries</title>
+
+     <style>
+          body {
+               background-color: aqua;
+          }
+
+          @media screen and (max-width:1000px) {
+               body {
+                    background-color: rgb(213, 250, 175);
+               }
+
+               * {
+                    margin: 0;
+                    padding: 0;
+               }
+
+               .boxes {
+                    flex-direction: column;
+
+
+               }
+
+
+
+          }
+
+          .boxes {
+               background-color: whitesmoke;
+               height: 60vh;
+               display: flex;
+          }
+
+          .box1 {
+               background-color: black;
+               width: 35vw;
+               height: 30vh;
+          }
+
+          .box2 {
+               background-color: blueviolet;
+               width: 35vw;
+               height: 30vh;
+          }
+
+          .box3 {
+               background-color: yellow;
+               width: 35vw;
+               height: 30vh;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="boxes">
+          <div class="box1">
+               Lorem ipsum dolor sit amet.
+          </div>
+          <div class="box2">
+               Lorem ipsum dolor sit amet.
+          </div>
+          <div class="box3">
+               Lorem ipsum dolor sit amet.
+          </div>
+     </div>
+</body>
+
+</html>

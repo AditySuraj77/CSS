@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>More on CSS Selectors</title>
+     <style>
+          /* .box:first-child{
+               color: blueviolet;
+          } */
+
+
+          /* .box::first-line{
+               color: blue;
+          } */
+
+          /* .boxes *{
+               background-color: rgb(77, 221, 221);
+               padding: 50px;
+          } */
+
+          /* [data-color="primary"]{
+               color: royalblue ;
+               background-color: rgb(255, 122, 233);
+          } */
+
+          /* .box:nth-child(even){
+               background-color: aqua;
+          }
+
+          .box:nth-child(odd){
+               background-color: rgb(255, 231, 16);
+          } */
+
+          /* .box:nth-last-child(2){
+               background-color: black;
+               color: aqua;
+          } */
+
+          /* .boxes::before{
+               content: "Hello";
+               color: brown;
+               background-color: aqua;
+               font-size:larger
+          }
+          .boxes::after{
+               content: 'World!';
+               color: rgb(226, 255, 60);
+               background-color: rgb(25, 0, 255);
+               font-size:larger
+          } */
+
+          .box::selection{
+               background-color: black;
+               color: aqua;
+
+          }
+          /* .box::first-letter{
+               color: blueviolet;
+               font-size: 50px;
+          } */
+          input::placeholder{
+               color: rgb(252, 5, 252);
+               font-size: 20px;
+          }
+     </style>
+</head>
+<body>
+     <div class="boxes">
+          <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, earum?</div>
+          <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, eum.</div>
+          <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, eum.</div>
+     </div>
+     <input type="text" placeholder="Write.......">
+</body>
+</html>
